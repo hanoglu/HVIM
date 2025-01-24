@@ -42,4 +42,9 @@ module.events.subscribed["core.autocommands"][autocmd] = true
     })
 
 ```
+## Gallery
+![1](https://github.com/user-attachments/assets/4ce4234b-ec31-4638-afcb-b15bc83f3d61)
 
+![2](https://github.com/user-attachments/assets/ecc68a27-b037-460d-a222-8a25ae3064e5)
+
+![3](https://github.com/user-attachments/assets/d921d44a-2c75-4add-af9e-50169897d2a2)
