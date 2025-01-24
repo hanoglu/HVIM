@@ -43,5 +43,6 @@ vim.cmd('nmap <C-n> :e $NOTES<CR>')
 
 vim.cmd('set nu')
 vim.cmd('set ignorecase')
+vim.cmd('set nowrap')
 
 
