@@ -1,0 +1,3 @@
+find -name "module.lua" 2> /dev/null | grep auto
+nvim .local/share/nvim/lazy/neorg/lua/neorg/modules/core/autocommands/module.lua
+delete 81..86
