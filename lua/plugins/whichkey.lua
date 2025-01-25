@@ -59,6 +59,9 @@ return {
     -- { "<leader>ft", "<cmd>NERDTreeToggle<CR>", desc = "Toggle file tree" },
     -- { "<leader>fo", "<cmd>NERDTreeFind<CR>", desc = "Open file in file tree" },
 
+    { "<leader>l", "", desc = "Language Specific" },
+    { "<leader>ld", require("hover").hover, desc = "Show variable description" },
+    -- { "<leader>fo", "<cmd>NvimTreeFindFile<CR>", desc = "Open file in file tree" },
 
 
 
