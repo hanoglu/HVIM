@@ -45,4 +45,9 @@ vim.cmd('set nu')
 vim.cmd('set ignorecase')
 vim.cmd('set nowrap')
 
+vim.opt.tabstop = 2       -- Number of spaces a tab counts for
+vim.opt.shiftwidth = 2    -- Number of spaces to use for autoindent
+vim.opt.expandtab = true  -- Convert tabs to spaces
+vim.opt.autoindent = true -- Copy indent from current line when starting a new line
+vim.opt.smartindent = true -- Enable smart indentation
 

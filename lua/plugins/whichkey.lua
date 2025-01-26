@@ -56,11 +56,17 @@ return {
     { "<leader>f", "", desc = "File Tree" },
     { "<leader>ft", "<cmd>NvimTreeToggle<CR>", desc = "Toggle file tree" },
     { "<leader>fo", "<cmd>NvimTreeFindFile<CR>", desc = "Open file in file tree" },
+    { "<leader>fs", "<cmd>w<CR>", desc = "Open file in file tree" },
     -- { "<leader>ft", "<cmd>NERDTreeToggle<CR>", desc = "Toggle file tree" },
     -- { "<leader>fo", "<cmd>NERDTreeFind<CR>", desc = "Open file in file tree" },
 
     { "<leader>l", "", desc = "Language Specific" },
     { "<leader>ld", require("hover").hover, desc = "Show variable description" },
+    { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<CR>", desc = "Show autofix menu" },
+    { "<leader>ls", "<cmd>Lspsaga peek_definition<CR>", desc = "Show variable definition source" },
+    { "<leader>lr", "<cmd>Lspsaga rename<CR>", desc = "Rename variable/function" },
+    { "<leader>lf", "<cmd>Lspsaga finder<CR>", desc = "Find references" },
+
     -- { "<leader>fo", "<cmd>NvimTreeFindFile<CR>", desc = "Open file in file tree" },
 
 
