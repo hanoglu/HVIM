@@ -67,9 +67,28 @@ return {
     { "<leader>lr", "<cmd>Lspsaga rename<CR>", desc = "Rename variable/function" },
     { "<leader>lf", "<cmd>Lspsaga finder<CR>", desc = "Find references" },
 
-    -- { "<leader>fo", "<cmd>NvimTreeFindFile<CR>", desc = "Open file in file tree" },
+    -- { "<leader>d", "", desc = "Debug Options" },
+    -- { "<leader>db", function() require("dap").toggle_breakpoint() end, desc = "Toggle breakpoint" },
+    -- { "<leader>dB", function() require("dap").set_breakpoint(vim.fn.input('Breakpoint condition: ')) end, desc = "Set breakpoint" },
+    -- { "<leader>dr", function() require("dap").repl.open() end, desc = "Open REPL shell" },
 
-
+    { "<leader>d", "", desc = "Debug Options" },
+    { "<leader>dd", "<cmd>call vimspector#Launch()<CR>", desc = "Start debugging" },
+    { "<leader>dk", "<cmd>call vimspector#Reset()<CR>", desc = "Kill debugging session" },
+    { "<leader>dr", "<cmd>call vimspector#Restart()<CR>", desc = "Restart debugging" },
+    { "<leader>db", "<cmd>call vimspector#ToggleBreakpoint()<CR>", desc = "Toggle breakpoint" },
+    { "<leader>dC", "<cmd>call vimspector#ClearBreakpoints()<CR>", desc = "Clear all breakpoints" },
+    { "<leader>dw", "<cmd>call vimspector#AddWatch()<CR>", desc = "Add variable to watchlist" },
+    { "<leader>dW", "<cmd>call vimspector#DeleteWatch()<CR>", desc = "Remove variable from watchlist" },
+    { "<leader>dJ", "<cmd>VimspectorCreateConfig<CR>", desc = "Create .vimspector.json config file" },
+    { "<leader>dc", "<cmd>call vimspector#Continue()<CR>", desc = "Debugger continue <F5>" },
+    { "<leader>ds", "<cmd>call vimspector#StepOver()<CR>", desc = "Debugger step over <F10>" },
+    { "<leader>di", "<cmd>call vimspector#StepInto()<CR>", desc = "Debugger step into <F11>" },
+    { "<leader>do", "<cmd>call vimspector#StepOut()<CR>", desc = "Debugger step out <F12>" },
+    { "<F5>", "<cmd>call vimspector#Continue()<CR>", desc = "which_key_ignore" },
+    { "<F10>", "<cmd>call vimspector#StepOver()<CR>", desc = "which_key_ignore" },
+    { "<F11>", "<cmd>call vimspector#StepInto()<CR>", desc = "which_key_ignore" },
+    { "<F12>", "<cmd>call vimspector#StepOut()<CR>", desc = "which_key_ignore" },
 
   },
 }
