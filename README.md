@@ -8,6 +8,7 @@ nvim
 ```
 
 ## Neorg Error Fix
+### "insertenter" Error
 To fix "insertenter" error related with Neorg;
 ```bash
 nvim $(find -name "module.lua" 2> /dev/null | grep auto | head -n1) # Possibly: ~/.local/share/nvim/lazy/neorg/lua/neorg/modules/core/autocommands/module.lua
@@ -40,7 +41,11 @@ module.events.subscribed["core.autocommands"][autocmd] = true
             _neorg_module_autocommand_triggered("core.autocommands.events." .. autocmd, true, ev)
         end,
     })
-
+```
+### norg_meta Treesitter Error
+If you get an error about missing norg_meta package, you should manually install norg_meta Treesitter package with;
+```vimscript
+:TSInstall norg_meta
 ```
 ## Gallery
 ![1](https://github.com/user-attachments/assets/4ce4234b-ec31-4638-afcb-b15bc83f3d61)
