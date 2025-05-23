@@ -48,6 +48,22 @@ module.events.subscribed["core.autocommands"][autocmd] = true
         end,
     })
 ```
+### range Error
+```bash
+nvim ~/.local/share/nvim/lazy/neorg/lua/neorg/modules/core/esupports/metagen/module.lua
+```
+and delete 245th and 246th lines
+```lua
+        for id, node in pairs(found) do
+            local name = query.captures[id]
+            if name == "meta" then
+                metadata_node = node
+                range[1], _, range[2], _ = node:range() <- DELETE
+                range[2] = range[2] + 2                 <- DELETE
+            end
+        end
+
+```
 ### norg_meta Treesitter Error
 If you get an error about missing norg_meta package, you should manually install norg_meta Treesitter package with;
 ```vimscript
