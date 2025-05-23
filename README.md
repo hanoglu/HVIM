@@ -6,6 +6,12 @@ mv ~/.config/nvim ~/.config/nvim_backup
 git clone https://github.com/hanoglu/HVIM ~/.config/nvim
 nvim
 ```
+## Dependencies
+```bash
+# rocks.nvim installation
+sudo dnf install lua5.1 luarocks
+nvim -u NORC -c "source https://raw.githubusercontent.com/nvim-neorocks/rocks.nvim/master/installer.lua"
+```
 
 ## Neorg Error Fix
 ### "insertenter" Error
