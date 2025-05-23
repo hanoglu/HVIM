@@ -11,6 +11,9 @@ nvim
 # rocks.nvim installation
 sudo dnf install lua5.1 luarocks
 nvim -u NORC -c "source https://raw.githubusercontent.com/nvim-neorocks/rocks.nvim/master/installer.lua"
+
+# Recomended fonts
+sudo dnf install cascadia-mono-nf-fonts
 ```
 
 ## Neorg Error Fix
